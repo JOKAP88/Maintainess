@@ -8,9 +8,26 @@
 
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">   <!--o Tipo de letra puxado de um bibilioteca-->
 
 </head>
     <body>
+    <header class="cabecalho">
+    <!-- <a href="index.html">--><h1 class="logo">Claudio Mourão & Tecnologias</h1><!--</a>--> 
+			<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+			<nav class="menu">
+				<a class="btn-close"><i class="fa fa-times"aria-hidden="true"></i></a>
+					<ul> 				<!--lista desordenada-->
+						<li><a href="#">Home</a></li>				<!-- <a> significa hiperligação necessita de ser fechado-->
+						<li><a href="#">Cliente</a></li>
+						<li><a href="#">Serviço</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Quem Somos</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</nav>
+			</header>   			
     <div class="hero">
         <h1 class="headline">Site em construção</h1>
         <p class="subhead">Brevemente disponível projetos WEB e mais.<br><strong>Claúdio Mourão</strong><br></p>
@@ -20,5 +37,13 @@
         <p class="copyright">Copyright &copy; 2026. Todos os direitos reservados</p>
     </footer>
 
+<script>
+$(".btn-menu").click(function(){
+					$(".menu").show();
+				});
+					$(".btn-close").click(function(){
+					$(".menu").hide();
+				});
+</script>
     </body>
 </html>
